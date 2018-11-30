@@ -28,6 +28,11 @@ public class ClientController {
 		return "client/list";
 	}
 	
+	@RequestMapping("gallaryList")
+	public String gallaryList(Model model) {		
+		return "client/gallaryList";
+	}
+	
 	@RequestMapping("jostList")
 	@ResponseBody
 	public List<YoutubeVO> jsonList() {		
